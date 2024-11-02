@@ -8,7 +8,7 @@ data$PEI[is.na(data$PEI)] <- 0
 
 str(data)
 
-reglas <- apriori(data, parameter = list(support=0.2, confidence=0.5 ))
+reglas <- apriori(data, parameter = list(support = 0.2, confidence = 0.5))
 
 inspect(reglas[0:100])
 inspect(reglas[100:200])
